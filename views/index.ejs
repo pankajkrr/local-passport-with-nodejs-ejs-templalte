@@ -1,0 +1,159 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<title>DEMO | JSONWORLD</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+<div class="background-container">
+<!--menu_section_start-->
+<header>
+<section id="home" class="menu">
+<div class="container">
+<div class="row">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="images/logo.png"/></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="/">Home</a></li>
+			<%if (userName.length > 0) { %>
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle"><img src="images/user.png"alt="#"/>Hello <span class="color"><%= userName; %></span><b class="caret"></b></a>
+					<ul class="dropdown-menu">
+							<li><a href="/logout">LOGOUT</a></li>
+					</ul>			
+			<% }else { %>
+					<li><a class="page-scroll" href="#" data-toggle="modal" data-target="#myModal">Login/Register</a></li>
+			<% } %>
+
+			
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+</div>
+</div>
+</section>
+<section class="bg">
+  <div class="container">
+
+    <div class="row">
+	  <div class="col-md-6 col-md-offset-6 text-right">
+		 <h3>JSON WORLD</h3>
+		 <p>Lorem Ipsum is simply dummy text of the printing .</p>
+	  </div>
+	</div>
+  </div>
+</section>
+</header>
+<!--header-end-->
+<!--aboutus-start-->
+<
+	  <section  id="about" class="content">
+  <div class="container">
+     <div class="row">
+	   <div class="col-sm-12 text-center content_box1 gap_upper">
+	      <h1>STOP WASTING YOUR TIME. </h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+									Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+									when an unknown printer took a galley of type and scrambled it to make a type 
+									specimen book. It has survived not only five centuries, but also the leap into 
+									electronic typesetting, remaining essentially unchanged. It was popularised in 
+									the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+									and more recently with desktop publishing software like Aldus PageMaker including 
+									versions of Lorem Ipsum.</p>	
+									<p>
+											It is a long established fact that a reader will be distracted by the readable content of a 
+											page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
+											normal distribution of letters, as opposed to using 'Content here, content here', making it 
+											look like readable English. Many desktop publishing packages and web page editors now use 
+											Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web 
+											sites still in their infancy. Various versions have evolved over the years, sometimes by 
+											accident, sometimes on purpose (injected humour and the like).									
+										</p>			  
+										<p>
+												It is a long established fact that a reader will be distracted by the readable content of a 
+												page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
+												normal distribution of letters, as opposed to using 'Content here, content here', making it 
+												look like readable English. Many desktop publishing packages and web page editors now use 
+												Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web 
+												sites still in their infancy. Various versions have evolved over the years, sometimes by 
+												accident, sometimes on purpose (injected humour and the like).									
+											</p>			  
+												
+										<br><br><br><br>
+	   </div>
+	    </div>
+  </div>
+	  
+	
+</section>
+	
+
+<!--aboutus-end-->
+<div>
+<div class="absolute">
+
+<!--footer-start-->
+
+
+<footer>
+<section class="footer_bottom">
+   <div class="container">
+     <div class="row">
+	   <div class="col-md-6 text-center col-sm-6 col-xs-9 text_right">
+	         <ul class="list-unstyled list-inline social-icon">
+	          <!--<li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+			  <li class="facebook"><a target="_blank" href="https://www.facebook.com/jsonworld"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			  <!--<li class="pinterest"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
+	        </ul>
+	   </div>
+	   <div class="col-md-3 col-sm-3 col-xs-12 text-center">
+	     <p>&nbsp;&nbsp;Copyright © 2017  Json World. All rights reserved.</p>
+	   </div>
+	 </div>
+   </div>
+</section>
+</footer>
+<!--footer-end-->
+</div>
+</div>
+</div>
+<!--login-popup-modal-box-start-->
+<% include partials/footer.ejs %>
+
+<!---login-popup-modal-box-end-->
+<!--footer_end-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-96184888-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

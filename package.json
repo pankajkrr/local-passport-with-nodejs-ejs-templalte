@@ -1,0 +1,27 @@
+{
+  "name": "NodeJS",
+  "version": "1.0.0",
+  "description": "NodeJS Project",
+  "main": "server.js",
+  "author": "Suraj Roy",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.14.0",
+    "express-mysql-session": "^1.2.1",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "md5": "^2.2.1",
+    "mustache": "^2.3.0",
+    "mysql": "^2.13.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "save": "^2.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
